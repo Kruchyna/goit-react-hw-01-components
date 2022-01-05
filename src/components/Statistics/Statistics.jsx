@@ -3,7 +3,7 @@ import randomColor from '../../lib/random-color';
 function Statistics({ title, stats }) {
   return (
     <section className="statistics">
-      <h2 className="title">{title && title}</h2>
+      {title &&<h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
         {stats.map(el => (
